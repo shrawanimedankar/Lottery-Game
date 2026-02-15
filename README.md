@@ -5,7 +5,7 @@ A fun and interactive Lottery Game built with **React**, where users can generat
 
 ## 🌐 Live Demo:
 
-https://random-joke-generator-vlnc.onrender.com/
+https://lottery-game-olfn.onrender.com
 
 
 ## Features
