@@ -1,0 +1,122 @@
+#root {
+  min-height: 100vh;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  background-color: rgb(160, 255, 153);
+  margin: 0;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  align-items: center; /* center everything horizontally */
+  gap: 1.5rem; /* spacing between headline, ticket, button, message */
+  text-align: center; /* center text like h1, h3 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* stops scrolling */
+}
+
+h1 {
+  font-size: 2.9em;
+  line-height: 1.5;
+  width: fit-content;
+  padding: 0 20px;
+  box-shadow: 1px 1px 10px rgb(0, 54, 19);
+}
+
+h3 {
+  font-size: 1.8em;
+  color: #ff0000;
+  background-color: white;
+  box-shadow: 3px 3px 30px rgb(255, 255, 255);
+}
+
+.btnBuy {
+  padding: 0.1em 1em;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: rgb(255, 94, 0);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: rgb(255, 255, 184);
+  border: 2px solid rgb(255, 255, 255);
+}
+.btnBuy:hover {
+  border: 2px solid yellow;
+  color: rgb(255, 255, 47);
+}
+
+.ticket {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 14px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+  background-color: rgb(63, 255, 63);
+  padding: 0 2rem 1rem 2rem;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.ticket {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 14px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+  background-color: rgb(63, 255, 63);
+  padding: 1rem 2rem;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column; /* stack title and numbers vertically */
+  align-items: center; /* center horizontally */
+}
+
+.numbers {
+  display: flex;
+  justify-content: center; /* center numbers horizontally */
+  gap: 2rem; /* space between numbers */
+  margin-top: 1rem; /* space below the title */
+}
+
+.ticketNum {
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+  margin-right: 13px;
+}
+
+.tickName {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #004310;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  h1 {
+    font-size: 2.3em;
+    line-height: 1;
+    padding: 10px 20px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+}
