@@ -2,26 +2,22 @@
 
 A fun and interactive Lottery Game built with **React**, where users can generate random tickets and celebrate with confetti when they win.
 
-
 ## 🌐 Live Demo:
 
 https://lottery-game-olfn.onrender.com
 
-
 ## Features
 
 - Generates random lottery numbers
-- Check for winning tickets (all numbers match).  
-- Confetti animation on win.  
-- Fully responsive and visually appealing.  
-
+- Check for winning tickets (all numbers match).
+- Confetti animation on win.
+- Fully responsive and visually appealing.
 
 ## Technologies
 
 - React
 - JavaScript
 - CSS
-
 
 ## 🎮 How to Play
 
@@ -30,4 +26,3 @@ https://lottery-game-olfn.onrender.com
 3. If all numbers on the ticket are the same, you win!
 4. Enjoy the confetti celebration.
 5. Click again to try your luck with a new ticket.
-
