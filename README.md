@@ -1,5 +1,4 @@
 # 💲 Lottery Game | React
-
 A fun and interactive Lottery Game built with **React**, where users can generate random tickets and celebrate with confetti when they win.
 
 ## 🌐 Live Demo:

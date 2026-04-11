@@ -4,7 +4,7 @@ import Ticket from "./Ticket.jsx";
 import Button from "./Button.jsx";
 import Confetti from "react-confetti";
 
-export default function Lottery({ n = 3, winCondition }) {
+export default function Lottery({ n, winCondition }) {
   const [ticket, setTicket] = useState(genTicket(n));
   const [hasWon, setHasWon] = useState(false);
   const isWinning = winCondition(ticket);
@@ -16,7 +16,7 @@ export default function Lottery({ n = 3, winCondition }) {
 
   useEffect(() => {
     if (isWinning) {
-      setHasWon(true); // trigger confetti
+      setHasWon(true); //trigger confetti
     }
   }, [isWinning]);
 
@@ -27,11 +27,9 @@ export default function Lottery({ n = 3, winCondition }) {
       <Button action={buyTicket} />
       {isWinning && (
         <h3>
-          <i className="fa-solid fa-trophy"></i> Boom! You Won{" "}
-          <i className="fa-solid fa-crown"></i>
+          <i className="fa-solid fa-trophy"></i> Boom! You Won <i className="fa-solid fa-crown"></i>
         </h3>
       )}
-
       {hasWon && (
         <Confetti width={window.innerWidth} height={window.innerHeight} />
       )}
